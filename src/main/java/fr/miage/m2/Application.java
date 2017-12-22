@@ -1,25 +1,28 @@
 package fr.miage.m2;
 
-import fr.miage.m2.rjava.RJavaImpl;
-import org.rosuda.REngine.REXPMismatchException;
-import org.rosuda.REngine.Rserve.RserveException;
+import fr.miage.m2.metier.Agent;
+import fr.miage.m2.service.AgentManager;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.io.IOException;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 @SpringBootApplication
 public class Application {
 
-    public static void main(String[] args) throws RserveException, REXPMismatchException, IOException, SQLException {
+    @Autowired
+    static AgentManager agentManager;
+
+    public static void main(String[] args) throws SQLException {
 
         SpringApplication.run(Application.class, args);
 
-        // Launch k-means algorithm when app has been run
-        //EntityManager.alter();
+        for (int i = 0; i < 81 ; i++) {
+            agentManager.connect(i);
+        }
 
-        RJavaImpl.lancerKmeans();
 
     }
 
