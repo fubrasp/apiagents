@@ -16,8 +16,10 @@ public class AgentDaoImpl implements AgentDao {
                     "UPDATE agents_events SET capacite_events=? WHERE id_resource=?;"
             );
 
-            pstmt.setInt(1, idAgent);
-            pstmt.setInt(2, possibleEvents);
+            pstmt.setInt(1, possibleEvents);
+            pstmt.setString(2, String.valueOf(idAgent));
+
+            //pstmt.executeUpdate();
             pstmt.executeUpdate();
         }catch (Exception e){
             e.printStackTrace();

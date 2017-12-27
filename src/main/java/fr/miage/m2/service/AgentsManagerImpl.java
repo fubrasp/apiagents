@@ -1,19 +1,18 @@
 package fr.miage.m2.service;
 
 import fr.miage.m2.connection.AgentDao;
+import fr.miage.m2.connection.AgentDaoImpl;
 import fr.miage.m2.metier.Agent;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 @Service
 public class AgentsManagerImpl implements AgentManager{
 
-    //@Value("$maxEvents")
+    @Value("$maxEvents")
     int maxEvents = 3;
 
-    @Autowired
-    AgentDao agentDao;
+    AgentDao agentDao = new AgentDaoImpl();
 
     @Override
     public void connect(int idAgent) {
