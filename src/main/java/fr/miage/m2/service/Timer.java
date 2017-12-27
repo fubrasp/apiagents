@@ -4,8 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class Timer extends Thread {
 
-	@Autowired
-	AgentManager agentManager;
+	AgentManager agentManager = new AgentsManagerImpl();
 
 	String idAgent;
 	int idEvent;
@@ -19,8 +18,9 @@ public class Timer extends Thread {
 	public void run() {		
 		try {
 			agentManager.receiveEvent(idAgent, idEvent);
-			sleep(120000);
+			sleep(10000);
 			agentManager.consumeEvent(idAgent,idEvent);
+			stop();
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

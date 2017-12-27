@@ -1,5 +1,6 @@
 package fr.miage.m2.metier;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Agent{
@@ -9,6 +10,7 @@ public class Agent{
 
     public Agent(String id) {
         this.id = id;
+        events = new ArrayList<>();
     }
 
     public String getId() {

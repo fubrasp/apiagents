@@ -1,0 +1,5 @@
+
+Method : POST
+Url : http://localhost:8080/agents/allocate
+Header : Content-Type   application/x-www-form-urlencoded
+Body :idAgent=1&idEvent=1

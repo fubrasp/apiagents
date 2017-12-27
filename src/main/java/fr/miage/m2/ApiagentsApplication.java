@@ -1,4 +1,4 @@
-package fr.miage.m2.apiagents;
+package fr.miage.m2;
 
 import fr.miage.m2.service.AgentManager;
 import fr.miage.m2.service.AgentsManagerImpl;
@@ -16,8 +16,8 @@ public static void main(String[] args) {
 	public void run(String... strings) throws Exception {
 		AgentManager agentManager = new AgentsManagerImpl();
 
-		for (int i = 0; i < 81 ; i++) {
-		    agentManager.connect(String.valueOf(i));
+		for (int i = 0; i < 2 ; i++) {
+		    agentManager.connect(String.valueOf(i+1));
 		}
 	}
 }

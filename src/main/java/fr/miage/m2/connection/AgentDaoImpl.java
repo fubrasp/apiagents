@@ -13,7 +13,7 @@ public class AgentDaoImpl implements AgentDao {
 
         try {
             PreparedStatement pstmt = PostgresConnection.getDbCon().conn.prepareStatement(
-                    "UPDATE agents_events SET capacite_events=? WHERE id_resource=?;"
+                    "UPDATE agents_events2 SET capacite_events=? WHERE id_resource=?;"
             );
 
             pstmt.setInt(1, possibleEvents);
@@ -32,7 +32,7 @@ public class AgentDaoImpl implements AgentDao {
         int availability =0;
         try {
             PreparedStatement pstmt = PostgresConnection.getDbCon().conn.prepareStatement(
-                    "SELECT capacite_events FROM agents_events WHERE id_resource=?;"
+                    "SELECT capacite_events FROM agents_events2 WHERE id_resource=?;"
             );
             pstmt.setString(1, idAgent);
             ResultSet rs = pstmt.executeQuery();
