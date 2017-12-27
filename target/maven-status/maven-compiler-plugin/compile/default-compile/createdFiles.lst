@@ -1,0 +1,9 @@
+fr\miage\m2\connection\AgentDaoImpl.class
+fr\miage\m2\metier\Agent.class
+fr\miage\m2\Application.class
+fr\miage\m2\service\AgentsManagerImpl.class
+fr\miage\m2\controllers\AgentsController.class
+fr\miage\m2\connection\AgentDao.class
+fr\miage\m2\service\Timer.class
+fr\miage\m2\connection\PostgresConnection.class
+fr\miage\m2\service\AgentManager.class

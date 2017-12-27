@@ -28,18 +28,7 @@
             <artifactId>json-path</artifactId>
             <scope>test</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.rosuda.REngine/REngine -->
-        <dependency>
-            <groupId>org.rosuda.REngine</groupId>
-            <artifactId>REngine</artifactId>
-            <version>2.1.0</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.nuiton.thirdparty/Rserve -->
-        <dependency>
-            <groupId>org.nuiton.thirdparty</groupId>
-            <artifactId>Rserve</artifactId>
-            <version>1.8-5</version>
-        </dependency>
+
         <!-- https://mvnrepository.com/artifact/postgresql/postgresql -->
         <dependency>
             <groupId>org.postgresql</groupId>
@@ -53,12 +42,7 @@
             <version>1.7.0</version>
             <scope>runtime</scope>
         </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.7.0</version>
-            <scope>runtime</scope>
-        </dependency>
+
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
@@ -70,11 +54,7 @@
             <artifactId>log4j</artifactId>
             <version>1.2.14</version>
         </dependency>
-        <dependency>
-            <groupId>org.apache.kafka</groupId>
-            <artifactId>kafka-clients</artifactId>
-            <version>1.0.0</version>
-        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>

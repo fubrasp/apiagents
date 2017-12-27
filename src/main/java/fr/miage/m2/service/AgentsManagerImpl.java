@@ -9,8 +9,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class AgentsManagerImpl implements AgentManager{
 
-    @Value("$maxEvents")
-    int maxEvents;
+    //@Value("$maxEvents")
+    int maxEvents = 3;
 
     @Autowired
     AgentDao agentDao;

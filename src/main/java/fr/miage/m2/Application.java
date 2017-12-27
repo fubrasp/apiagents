@@ -1,17 +1,14 @@
 package fr.miage.m2;
 
-import fr.miage.m2.metier.Agent;
 import fr.miage.m2.service.AgentManager;
+import fr.miage.m2.service.AgentsManagerImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 @SpringBootApplication
 public class Application {
-
     @Autowired
     static AgentManager agentManager;
 
