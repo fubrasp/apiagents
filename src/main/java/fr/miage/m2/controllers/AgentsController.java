@@ -20,7 +20,7 @@ public class AgentsController {
 
     @PostMapping(value = "/allocate", consumes = "application/json", produces = "application/json")
     @ResponseBody
-    public ResponseEntity allocate(@RequestBody int idAgent, int idEvent) throws IOException{
+    public ResponseEntity allocate(@RequestBody String idAgent, int idEvent) throws IOException{
         new Timer(idAgent,idEvent).run();
         return new ResponseEntity<>(true, HttpStatus.OK);
     }

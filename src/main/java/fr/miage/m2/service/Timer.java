@@ -7,10 +7,10 @@ public class Timer extends Thread {
 	@Autowired
 	AgentManager agentManager;
 
-	int idAgent;
+	String idAgent;
 	int idEvent;
 
-	public Timer(int idAgent, int idEvent) {
+	public Timer(String idAgent, int idEvent) {
 		this.idAgent = idAgent;
         this.idEvent = idEvent;
 	}

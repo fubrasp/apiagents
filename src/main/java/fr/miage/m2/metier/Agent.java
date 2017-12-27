@@ -4,14 +4,14 @@ import java.util.List;
 
 public class Agent{
 
-    private int id;
+    private String id;
     private List<Integer> events;
 
-    public Agent(int id) {
+    public Agent(String id) {
         this.id = id;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 

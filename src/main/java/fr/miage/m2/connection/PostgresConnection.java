@@ -9,8 +9,8 @@ public final class PostgresConnection {
     public static PostgresConnection db;
 
     private PostgresConnection() {
-        //String url= "jdbc:postgresql://92.222.86.67:5432/";
-        String url= "jdbc:postgresql://127.0.0.1:5432/";
+        String url= "jdbc:postgresql://92.222.86.67:5432/";
+        //String url= "jdbc:postgresql://127.0.0.1:5432/";
         String dbName = "personnesagees";
         //String dbName = "test";
         String driver = "org.postgresql.Driver";

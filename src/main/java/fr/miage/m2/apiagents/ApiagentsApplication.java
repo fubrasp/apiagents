@@ -17,7 +17,7 @@ public static void main(String[] args) {
 		AgentManager agentManager = new AgentsManagerImpl();
 
 		for (int i = 0; i < 81 ; i++) {
-		    agentManager.connect(i);
+		    agentManager.connect(String.valueOf(i));
 		}
 	}
 }
