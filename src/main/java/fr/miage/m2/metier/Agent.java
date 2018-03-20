@@ -1,12 +1,16 @@
 package fr.miage.m2.metier;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Agent{
+public class Agent implements Serializable{
 
     private String id;
     private List<Integer> events;
+
+    public Agent() {
+    }
 
     public Agent(String id) {
         this.id = id;

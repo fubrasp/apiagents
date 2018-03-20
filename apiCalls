@@ -3,3 +3,10 @@ Method : POST
 Url : http://localhost:8080/agents/allocate
 Header : Content-Type   application/x-www-form-urlencoded
 Body :idAgent=1&idEvent=1
+
+
+Method : POST
+Url : http://localhost:8080/agents/allocate
+Header : Content-Type   Json
+Body :
+[{"id":"1","events":[]},{"id":"8","events":[]},{"id":"33","events":[]},{"id":"26","events":[]},{"id":"62","events":[]},{"id":"19","events":[]},{"id":"12","events":[]},{"id":"11","events":[]},{"id":"10","events":[]},{"id":"51","events":[]},{"id":"43","events":[]}]
