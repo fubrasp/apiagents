@@ -15,24 +15,24 @@ public class AgentsManagerImpl implements AgentManager{
     AgentDao agentDao = new AgentDaoImpl();
 
     @Override
-    public void connect(String idAgent) {
+    public void connect(Integer idAgent) {
         agentDao.setAvailability(idAgent, maxEvents );
     }
 
     @Override
-    public void disconnect(String idAgent) {
+    public void disconnect(Integer idAgent) {
         agentDao.setAvailability(idAgent, 0);
     }
 
     @Override
-    public void receiveEvent(String idAgent, int idEvent) {
+    public void receiveEvent(Integer idAgent, int idEvent) {
         Agent agent = new Agent(idAgent);
         agent.getEvents().add(idEvent);
         agentDao.setAvailability(idAgent,agentDao.getAvailability(idAgent)-1);
     }
 
     @Override
-    public void consumeEvent(String idAgent, int idEvent) {
+    public void consumeEvent(Integer idAgent, int idEvent) {
         Agent agent = new Agent(idAgent);
         if(agent.getEvents().contains(idEvent))
             agent.getEvents().remove(idEvent);

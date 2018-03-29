@@ -6,18 +6,18 @@ import java.util.List;
 
 public class Agent implements Serializable{
 
-    private String id;
+    private Integer id;
     private List<Integer> events;
 
     public Agent() {
     }
 
-    public Agent(String id) {
+    public Agent(Integer id) {
         this.id = id;
         events = new ArrayList<>();
     }
 
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 

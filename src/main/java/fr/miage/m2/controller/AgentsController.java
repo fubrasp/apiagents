@@ -20,7 +20,7 @@ public class AgentsController {
     AgentManager agentManager = new AgentsManagerImpl();
 
     @PostMapping(value = "allocate")
-    public ResponseEntity allocate(@RequestParam String idAgent, @RequestParam Integer idEvent) throws IOException{
+    public ResponseEntity allocate(@RequestParam Integer idAgent, @RequestParam Integer idEvent) throws IOException{
         System.out.println("*****");
         System.out.println(idAgent +" | "+ idEvent);
         new Timer(idAgent,idEvent).run();

@@ -18,7 +18,7 @@ public final class PostgresConnection {
         String password = "toJIN";
         try {
             Class.forName(driver).newInstance();
-            this.conn = (Connection) DriverManager.getConnection(url+dbName,userName,password);
+            this.conn = (Connection) DriverManager.getConnection("jdbc:postgresql://92.222.86.67:5432/personnesagees","postgres","toJIN");
         }
         catch (Exception sqle) {
             sqle.printStackTrace();

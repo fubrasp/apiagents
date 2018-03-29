@@ -9,15 +9,15 @@ import java.sql.ResultSet;
 public class AgentDaoImpl implements AgentDao {
 
     @Override
-    public void setAvailability(String idAgent,int possibleEvents) {
+    public void setAvailability(Integer idAgent,int possibleEvents) {
 
         try {
             PreparedStatement pstmt = PostgresConnection.getDbCon().conn.prepareStatement(
-                    "UPDATE agents_events2 SET capacite_events=? WHERE id_resource=?;"
+                    "UPDATE agents_events SET capacite_events=? WHERE id_resource=?;"
             );
 
             pstmt.setInt(1, possibleEvents);
-            pstmt.setString(2, idAgent);
+            pstmt.setString(2, idAgent.toString());
 
             //pstmt.executeUpdate();
             pstmt.executeUpdate();
@@ -28,13 +28,13 @@ public class AgentDaoImpl implements AgentDao {
     }
 
     @Override
-    public int getAvailability(String idAgent) {
+    public int getAvailability(Integer idAgent) {
         int availability =0;
         try {
             PreparedStatement pstmt = PostgresConnection.getDbCon().conn.prepareStatement(
-                    "SELECT capacite_events FROM agents_events2 WHERE id_resource=?;"
+                    "SELECT capacite_events FROM agents_events WHERE id_resource=?;"
             );
-            pstmt.setString(1, idAgent);
+            pstmt.setString(1, idAgent.toString());
             ResultSet rs = pstmt.executeQuery();
             if(rs.next()){
                availability = rs.getInt("capacite_events");

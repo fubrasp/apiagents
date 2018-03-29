@@ -1,9 +1,12 @@
-D:\said\Informatique\Etudes\M2 MIAGE SID\MOE Indus\apiagents\src\main\java\fr\miage\m2\connection\PostgresConnection.java
-D:\said\Informatique\Etudes\M2 MIAGE SID\MOE Indus\apiagents\src\main\java\fr\miage\m2\service\Timer.java
-D:\said\Informatique\Etudes\M2 MIAGE SID\MOE Indus\apiagents\src\main\java\fr\miage\m2\service\AgentsManagerImpl.java
-D:\said\Informatique\Etudes\M2 MIAGE SID\MOE Indus\apiagents\src\main\java\fr\miage\m2\connection\AgentDaoImpl.java
-D:\said\Informatique\Etudes\M2 MIAGE SID\MOE Indus\apiagents\src\main\java\fr\miage\m2\Application.java
-D:\said\Informatique\Etudes\M2 MIAGE SID\MOE Indus\apiagents\src\main\java\fr\miage\m2\connection\AgentDao.java
-D:\said\Informatique\Etudes\M2 MIAGE SID\MOE Indus\apiagents\src\main\java\fr\miage\m2\metier\Agent.java
-D:\said\Informatique\Etudes\M2 MIAGE SID\MOE Indus\apiagents\src\main\java\fr\miage\m2\controllers\AgentsController.java
-D:\said\Informatique\Etudes\M2 MIAGE SID\MOE Indus\apiagents\src\main\java\fr\miage\m2\service\AgentManager.java
+/Users/bertran95u/apiagents/src/main/java/fr/miage/m2/controller/AgentsController.java
+/Users/bertran95u/apiagents/src/main/java/fr/miage/m2/metier/Agent.java
+/Users/bertran95u/apiagents/src/main/java/fr/miage/m2/service/Allocations.java
+/Users/bertran95u/apiagents/src/main/java/fr/miage/m2/connection/AgentDao.java
+/Users/bertran95u/apiagents/src/main/java/fr/miage/m2/service/AgentManager.java
+/Users/bertran95u/apiagents/src/main/java/fr/miage/m2/service/AgentsManagerImpl.java
+/Users/bertran95u/apiagents/src/main/java/fr/miage/m2/connection/AgentDaoImpl.java
+/Users/bertran95u/apiagents/src/main/java/fr/miage/m2/connection/PostgresConnection.java
+/Users/bertran95u/apiagents/src/main/java/fr/miage/m2/service/Timer.java
+/Users/bertran95u/apiagents/src/main/java/fr/miage/m2/ApiagentsApplication.java
+/Users/bertran95u/apiagents/src/main/java/fr/miage/m2/asynchMessaging/RabbiMQConfig.java
+/Users/bertran95u/apiagents/src/main/java/fr/miage/m2/asynchMessaging/AllocationReceiver.java

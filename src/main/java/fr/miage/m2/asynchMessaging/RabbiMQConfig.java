@@ -14,7 +14,7 @@ import org.springframework.messaging.handler.annotation.support.DefaultMessageHa
 @Configuration
 public class RabbiMQConfig implements RabbitListenerConfigurer {
 
-    public final static String queueName = "apiAgentQueue";
+    public final static String queueName = "AllocationQueue";
 
     @Bean
     Queue queue() {

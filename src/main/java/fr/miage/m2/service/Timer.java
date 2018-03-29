@@ -6,10 +6,10 @@ public class Timer extends Thread {
 
 	AgentManager agentManager = new AgentsManagerImpl();
 
-	String idAgent;
+	Integer idAgent;
 	int idEvent;
 
-	public Timer(String idAgent, int idEvent) {
+	public Timer(Integer idAgent, int idEvent) {
 		this.idAgent = idAgent;
         this.idEvent = idEvent;
 	}
